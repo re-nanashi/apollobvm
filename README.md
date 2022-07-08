@@ -1,19 +1,5 @@
-# ApolloBVM - ARCHIVED #
-### Rice University Oshman Engineering Design Kitchen ###
-###### Author: Thomas Herring ######
-
-![Build Status](https://github.com/apollobvm/apollobvm/workflows/build/badge.svg)
-<!--[![Build Status](https://github.com/apollobvm/apollobvm/workflows/test/badge.svg)](https://github.com/arduino/arduino-cli-example/actions)-->
-
-**This project is not being actively developed.**
-
-This repository contains all the working code for both the master and slave Arduino to build the ApolloBVM. Feel free to fork it for your own development, we encourage collaboration! All mechanical parts and assembly instructions can be found [here](http://oedk.rice.edu/apollobvm).
-
-For those looking to just download and run the code, please refer to the [releases](https://github.com/apollobvm/apollobvm/releases) section and downloaded the latest firmware. Otherwise, please follow the instructions below on install
-
-For any issues with the code, electrical setup, or mechanical components, please file a bug report [here](https://github.com/apollobvm/apollobvm/issues).
-
-
+# ApolloBVM - re-nanashi version #
+###### Original Author: Thomas Herring ######
 
 ## System Overview ##
 The ApolloBVM system uses two coordinated microcontrollers in order to facilitate user input while guaranteeing uninterrupted airflow. The system has a master controller, responsible for managing the display and user input, and a slave controller that actually sends motor commands to the servos. This allows the master controller to operate entirely separately from the slave and ensures that the system is real-time safe. In order to give more clarity about the technical operation of this device, we will outline the operation of each controller separately.
